@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Desarrollo Web FullStack</title>
+    <style>
+        input{
+            margin: 1.2vw 1vh;
+        }
+        button{
+            margin: 0 1vh;
+        }
+        #bienvenida{
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 5vh;
+        }
+        #bienvenida p{
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article id="container">
+            <section id="title" align="center">
+                <h1><u>Inscripción:</u></h1>
+                <h2><u>Desarrollo web FullStack,</u></h2>
+                <h2><u>Universidad Tecnológica Nacional</u></h2>
+            </section>
+            <br>
+            <hr>
+            <section id="bienvenida" align="center">
+                <p>¡Nos alegramos mucho de que quieras formar parate de nuestra institución! A continuación te dejamos un formulario que necesitas completar para inscribirte en la carrera, en el caso de ser seleccionado/a, te estaremos enviando un correo para continuar con el proceso. ¡Esperamos verte pronto!</p>
+            </section>
+            <hr>
+            <section id="form">
+                <h3 align="center"><u>Formulario de inscripción</u></h3>
+                <form action="index.html" align="center">
+                    <label for="Nombre">Nombre/s:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label for="Apellido">Apellido/s:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label for="Email">Email:</label>
+                    <br>
+                    <input type="email">
+                    <br>
+                    <label for="num">Teléfono:</label>
+                    <br>
+                    <input type="number">
+                    <br>
+                    <label for="dni">Número de dni:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label for="pais">Pais natal:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label for="secundario">¿Tiene secundario completo?</label>
+                    <br>
+                    <input type="radio" checked>Si
+                    <input type="radio">No
+                    <br>
+                    <label for="Trabajo">¿Trabaja actualmente?</label>
+                    <br>
+                    <input type="radio" name="trabaja" checked>Si
+                    <input type="radio" name="trabaja">No
+                    <br>
+                    <button type="reset">Limpiar</button>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <article #footerContainer align="center">
+            <p>Universidad Tecnológica Nacional de Mar del Plata®</p>
+        </article>
+    </footer>
+</body>
+</html>
