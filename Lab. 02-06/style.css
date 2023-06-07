@@ -1,0 +1,112 @@
+:root{
+    --font-main: 'Concert One', cursive;  
+    --clippy: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+}
+*{
+    font-family: var(--font-main);
+    font-variant: small-caps;
+    text-transform: lowercase;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbe900;
+}
+#logoHeader img{
+    width: 7vw;
+    margin: .5vw;
+}
+#menuNav{
+    padding: 1vw 5vw;
+    display: flex;
+    width: 50%;
+    font-size: 2.5vw;
+}
+#menuNav li{
+    margin-right: 5vw;
+}
+#menuNav li::after{
+    content: "";
+    display: block;
+    background: #00974a;
+    width: 100%;
+    height: .4vw;
+    margin-top: 0px;
+    clip-path: var(--clippy);
+}
+#menuNav li:hover::after{
+    content: "";
+    transition: clip-path .4s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#midPage{
+    display: flex;
+}
+main{
+    width: 70%;
+    height: 100%;
+    background-color: #00974a;
+}
+#main img{
+    border-radius: 8%;
+    box-shadow: 5px 5px 10px 5px #00000094;
+    margin: 3%;
+    width: 15vw;
+    height: 15vw;
+}
+#fotosTitle h2{
+    text-align: center;
+    font-size: 5vw;
+}
+#firstRow, #secondRow, #thirdRow{
+    display: flex;
+    justify-content: center;
+}
+aside{
+    overflow-y: auto;
+    text-align: center;
+    width: 30%;
+    background-color: #323891;
+}
+#menuAside{
+    margin: 2vw;
+}
+#aside h2{
+    font-size: 4vw;
+    font-family: var(--font-main);
+    color: #ffffff;
+}
+#listMenu{
+    margin: 1vw;
+    border: solid .3vw #00974a;
+}
+#listMenu li{
+    margin: 1vw;
+    font-size: 2vw;
+}
+#form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#mensaje{
+    width: 80%;
+    height: 30%;
+}
+#enviar{
+    color: #323891;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    width: 20%;
+    height: 2.5vw;
+}
+#footer{
+    background-color: #fbe900;
+}
