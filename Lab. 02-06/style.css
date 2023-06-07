@@ -70,9 +70,10 @@ main{
     justify-content: center;
 }
 aside{
-    overflow-y: auto;
+    overflow-y: scroll;
     text-align: center;
     width: 30%;
+    height: 63.5vw;
     background-color: #323891;
 }
 #menuAside{
