@@ -10,7 +10,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #ffffff;
     scroll-behavior: smooth;
 }
 #header{
@@ -31,6 +30,9 @@
 }
 #menuNav li{
     margin-right: 5vw;
+}
+#menuNav li a{
+    color: #ffffff;
 }
 #menuNav li::after{
     content: "";
@@ -62,6 +64,7 @@ main{
     height: 15vw;
 }
 #fotosTitle h2{
+    color: #ffffff;
     text-align: center;
     font-size: 5vw;
 }
@@ -89,6 +92,7 @@ aside{
     border: solid .3vw #00974a;
 }
 #listMenu li{
+    color: #ffffff;
     margin: 1vw;
     font-size: 2vw;
 }
@@ -96,6 +100,9 @@ aside{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+textarea{
+    resize: none;
 }
 #mensaje{
     width: 80%;
