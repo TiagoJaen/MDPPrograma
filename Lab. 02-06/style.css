@@ -32,9 +32,9 @@
     margin-right: 5vw;
 }
 #menuNav li a{
-    color: #ffffff;
+    color: #323891;
 }
-#menuNav li::after{
+li::after{
     content: "";
     display: block;
     background: #00974a;
@@ -42,8 +42,7 @@
     height: .4vw;
     margin-top: 0px;
     clip-path: var(--clippy);
-}
-#menuNav li:hover::after{
+}li:hover::after{
     content: "";
     transition: clip-path .4s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -73,7 +72,6 @@ main{
     justify-content: center;
 }
 aside{
-    overflow-y: scroll;
     text-align: center;
     width: 30%;
     height: 63.5vw;
@@ -88,13 +86,24 @@ aside{
     color: #ffffff;
 }
 #listMenu{
+    height: 30vw;
+    overflow-y: scroll;
     margin: 1vw;
     border: solid .3vw #00974a;
 }
+#listMenu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #listMenu li{
     color: #ffffff;
+    width: fit-content;
     margin: 1vw;
     font-size: 2vw;
+}
+#listMenu li a{
+    color: #ffffff;
 }
 #form{
     display: flex;
@@ -108,13 +117,37 @@ textarea{
     width: 80%;
     height: 30%;
 }
-#enviar{
+#buttons{
+    display: flex;
+}
+#enviar, #limpiar{
+    margin: 0 1em;
     color: #323891;
     font-size: 1.5vw;
     margin-top: 1vw;
-    width: 20%;
-    height: 2.5vw;
+    width: 90%;
+    height: 2.2vw;
 }
 #footer{
     background-color: #fbe900;
+}
+#redes{
+    position: absolute;
+    display: flex;
+    align-content: center;
+}
+#redes > *{
+    font-size: 25px;
+    margin: 0 10px;
+}
+#ig a, #tw a, #fb a{
+    color: #00974a;
+}
+#redes > *:hover{
+    box-shadow: 0 0 20px #00974a;
+}
+#tituloFooter{
+    color: #00974a;
+    font-size: 2vw;
+    text-align: center;
 }
