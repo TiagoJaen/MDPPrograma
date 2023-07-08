@@ -1,0 +1,121 @@
+:root{
+    --font-principal:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-secundaria:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    background-color: #00643b;
+    justify-content: space-between;
+}
+body{
+    background-color: #d4e9e2;
+}
+#logo img{
+    width: 2.5em;
+    margin: .2em .5em;
+}
+#navMenu{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.navItem{
+    text-transform: uppercase;
+    font-family: var(--font-principal);
+    list-style: none;
+    padding: 1em;
+}
+.navItem a{
+    color: #ffff;
+    text-decoration: none;
+}
+.navItem:hover{
+    text-shadow: 0 1px 10px #ffff;
+    transition: .2s;
+}
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    background-color: #ffff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border: solid .5em #00643b;
+    border-radius: 10%;
+    margin: 4em 0 0 0;
+    width: 20%;
+    height: fit-content;
+}
+.card img{
+    max-width: 100%;
+}
+.card:hover > #contenido{
+    transition: .5s;
+    filter: grayscale(10);
+}
+#contenido h2, #contenido p{
+    color: #00643b;
+    font-family: var(--font-secundaria);
+}
+.card:hover  #agregar{
+    display: block;
+}
+#agregar{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    color: #ffff;
+    text-align: center;
+    width: 5em;
+    height: 2em;
+    font-size: 1em;
+    border: none;
+    border-radius: 1em;
+    margin: .5em 0;
+    background-color: #00643b;
+}
+#ig{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: white;
+    background-color: #362415;
+    border-radius: 50%;
+    bottom: 50vh;
+    right: 0;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0 0;
+    width: 100%;
+    height: 2.5em;
+    background-color: #00643b;
+}
+footer h2{
+    color: #d4e9e2;
+    font-family: var(--font-principal);
+    text-transform: uppercase;
+    font-size: 1.3em;
+}

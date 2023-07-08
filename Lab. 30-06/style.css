@@ -1,0 +1,271 @@
+.container-fluid{
+    padding: 0 !important;
+}
+/* Header */
+.nav-container{
+    height: 50px;
+    background-color: #218999;
+    box-shadow: 0 1px 10px #000;
+    z-index: 100;
+}
+.nav-container > *, #search{
+    height: 50px;
+}
+.navbar-brand{
+    margin: 0 !important;
+    padding: 0 12px !important;
+    background: linear-gradient(to right, #d586fa, #0000);
+}
+.navbar-brand img{
+    width: 2em;
+}
+.navbar-nav, .navbar-nav > *{
+    height: 50px;
+}
+.nav-item, #search, #carro, .navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.nav-item:hover{
+    text-shadow: 0 1px 10px #ffff;
+}
+.nav-link{
+    color: #ffff !important;
+}
+.card-body{
+    width: fit-content;
+}
+.card-body ul{
+    list-style: none;
+    padding: 0;
+}
+.card-body ul li a{
+    text-decoration: none;
+}
+.nav-item, #search{
+    border-left: solid 1px #40c7d0;
+}
+#search button{
+    background-color: #0000;
+    border: none;
+}
+.buscador::placeholder{
+    color: #ba47e9 !important;
+}
+#carro{
+    padding: 12px;
+}
+#carro a{
+    margin: 3px;
+    color: #ba47e9;
+    background-color: #ffff;
+}
+#carro > button:hover{
+    box-shadow: 0 0 10px 1px #ba47e9 !important;
+}
+/* Main */
+main{
+    background: linear-gradient(165deg, #072428, #13aab5);
+}
+/* carousel */
+.carousel, .carousel > *{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.carousel-indicators{
+    bottom: 2.5em !important;
+}
+.carousel-indicators > *{
+    background-color: #ba47e9 !important;
+    border-radius: 50%;
+    width: .5em !important;
+    height: .5em !important;
+}
+.carousel-ver-mas{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    bottom: .5em;
+    width: 100%;
+}
+.carousel-ver-mas > button{
+    background-color: #479fac;
+    border: none;
+}
+.carousel-ver-mas > button:hover{
+    background-color: #d586fa;
+    box-shadow: 0 0 10px 1px #ba47e9;
+}
+.carousel-ver-mas > button:active{
+    background-color: #ba47e9 !important;
+}
+/* productos */
+.productos-1{
+    height: 92vh;
+    background-color: #ffff;
+    margin: 0 !important;
+}
+.producto-1-item{ 
+    margin: 1vw 0;
+    padding: 0 !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.producto-1-item:hover{
+    box-shadow: inset 0 0 10px 2px #ba47e9;
+}
+.producto-1-item img{
+    border-radius: 50%;
+}
+.producto-1-item > button{
+    display: none;
+}
+.producto-1-item:hover > .modalButton{
+    display: block;
+}
+.modalButton{
+    background-color: #479fac !important;
+    border: none !important;
+    position: absolute;
+}
+.modalButton:hover{
+    background-color: #d586fa !important;
+    box-shadow: 0 0 10px 1px #ba47e9;
+}
+.modalButton:active{
+    background-color: #ba47e9 !important;
+}
+.modal-body img{
+    width: 100%;
+}
+.titles{
+    color: #218999;
+}
+.modal-content{
+    width: 600px !important;
+}
+.modal-agregar{
+    background-color: #224d57 !important;
+    border: none !important;
+}
+#modal-buttons{
+    display: flex;
+    align-items: center;
+}
+#modal-heart{
+    margin-left: 1em;
+}
+#modal-heart > input{
+    display: none;
+}
+#heart-span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 1.5em;
+}
+#heart-span:hover{
+    transition: .6s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.2);
+}
+#heart-fav{
+    cursor: pointer;
+    display: none;
+    font-size: 1.5em;
+}
+#heart-fav:hover{
+    transition: .6s;
+    transform: scale(1.2);
+}
+#modal-heart input:checked ~ #heart-span{
+    display: none;
+}
+#modal-heart input:checked ~ #heart-fav{
+    display: block;
+}
+/* Información */
+.info{
+    display: flex;
+    justify-content: space-between !important;
+    box-shadow: inset 0 0 10px 5px #ba47e9;
+    margin: 0 !important;
+    padding: 15vw 0 0 0 !important;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+#logo-info{
+    position: static;
+    bottom: 0;
+}
+#logo-info i{
+    filter: opacity(.7);
+    font-size: 15vw;
+}
+#texto-info{
+    z-index: 10;
+    color: #b2edef;
+}
+#texto-info h2{
+    color: #ffff;
+}
+.info-marcas, .info-pago, .info-variedad{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* Productos 2 */
+.productos-2{
+    background-color: #b2edef;
+    box-shadow: inset 0 0 10px 5px #ba47e9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+}
+#productos-2-title{
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 0 !important;
+    margin: 2em 0;
+    text-align: center;
+    color: #c350f8;
+}
+#productos-2-cards{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 95vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+#productos-2-cards > *{
+    width: fit-content;
+}
+.product-card{
+    background: linear-gradient(150deg, #d586fa, #479fac) !important;
+    max-width: 15em;
+}
+.product-card > .card-body{
+    color: #ffff;
+}
+.modalButtonCard{
+    display: none !important;
+    position: absolute;
+    bottom: 1vw;
+    right: 2vw;
+    background-color: #c350f8 !important;
+    border: solid 2px #ffff !important;
+}
+.modalButtonCard:hover{
+    background-color: #224d57 !important;
+}
+.modalButtonCard:active{
+    background-color: #40c7d0 !important;
+}
+.product-card:hover  .modalButtonCard{
+    display: block !important;
+}
