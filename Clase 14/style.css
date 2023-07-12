@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#bloques{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+    height: 50vh;
+}
+#block-1{
+    grid-column-end: span 3;
+    width: 100%;
+    background: aqua;
+}
+#block-2{
+    grid-column-end: span 2;
+    width: 100%;
+    background: black;
+}
+#block-3{
+    width: 100%;
+    background: blueviolet;
+}
+#buttons{
+    text-align: center;
+}
+#cambiar{
+    cursor: pointer;
+    background-color: green;
+    margin: 1em;
+    color: #fff;
+    padding: .5em;
+    border: solid 1px #2bff00;
+    border-radius: 5px;
+}
+#volver{
+    cursor: pointer;
+    background-color: red;
+    margin: 1em;
+    color: #fff;
+    padding: .5em;
+    border: solid 1px #7d0000;
+    border-radius: 5px;
+}

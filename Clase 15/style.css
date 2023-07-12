@@ -1,0 +1,128 @@
+:root{
+    --primary-color: #a4ffee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Caprasimo', cursive;;
+}
+main{
+    background-color: #362415;
+    min-height: 100vh;
+}
+button{
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 0 2em;
+}
+button:hover{
+    transition: .3s;
+    box-shadow: 0 0 5px 1px var(--primary-color);
+}
+button:active{
+    color: #362415;
+    box-shadow: 0 0 10px 5px var(--primary-color);
+}
+#title-section{
+    text-transform: uppercase;
+    color: #fff4c1;
+    padding: 2em;
+    text-align: center;
+}
+#title-section h1{
+    text-shadow: 0 0 10px #dfd3a0;
+    margin: auto;
+    width: fit-content;
+}
+#item-section{
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+#item-section h2{
+    text-shadow: 0 0 10px var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+#nombre{
+    border-radius: 10px;
+    color: #362415;
+    background-color: #fff6d7;
+    border: none;
+    margin: 0 2em;
+    padding: 1em;
+    width: 20em;
+}
+#nombre::placeholder{
+    color: #3624157b;
+
+}
+#nombre:focus::placeholder{
+    transition: .3s;
+    text-shadow: 0 0 2px #36241564;
+}
+#nombre:focus{
+    transition: .6s;
+    box-shadow: 0 0 5px 1px #dfd3a0;
+    border: none;
+    outline: none;
+}
+#agregar{
+    text-transform: uppercase;
+    height: 2.5em;
+}
+#item{
+    margin: auto;
+    width: 60%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+li:nth-child(2n){
+    color: #00581f;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px 1px var(--primary-color);
+}
+li{
+    color: #a4ffee;
+    border-radius: 10px;
+    background-color: #00581f;
+    box-shadow: 0 0 5px 1px #00581f;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+p{
+    border-right: solid 2px #dfd3a0;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 1em 1em;
+}
+.eliminar{
+    background-color: #dfd3a0;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px #362415;
+    height: 3em;
+    margin: 0 1em;
+}
+.eliminar:hover{
+    box-shadow: 0 0 5px 1px #dfd3a0;
+}
+.eliminar:active{
+    box-shadow: 0 0 10px 5px #dfd3a0;
+    color: #00581f;
+}
