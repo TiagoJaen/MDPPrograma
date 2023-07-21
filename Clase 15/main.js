@@ -14,14 +14,13 @@ agregar.addEventListener ("click", function(){
         const eliminar = document.createElement("button")
         eliminar.className = "eliminar";
         eliminar.textContent = "Eliminar";
-            
-        ul.appendChild(li);
-        li.appendChild(p);
-        li.appendChild(eliminar)
-        
         eliminar.addEventListener("click", function(){
             ul.removeChild(li)
         })
+        
+        ul.appendChild(li);
+        li.appendChild(p);
+        li.appendChild(eliminar)
 
         input.value = ""
     }
